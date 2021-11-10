@@ -66,3 +66,23 @@ document.querySelector('#form-edit-post').addEventListener('submit', (e) => {
         }
     }
 })
+
+//Delete post
+
+// const deletePost = (id) => {
+
+//     let d = document.querySelector(`#post-${id}`);
+//     console.log(d);
+//     for(let i=0; i < posts.length; i++){
+//         if(posts[i].id.toString() === document.querySelector('#post-id').value){
+//             posts.splice((i), 1);
+//             showPosts(posts);
+//             break
+//         }
+//     }
+// }
+
+const deletePost = (id) => {
+    let d = document.querySelector(`#post-${id}`);
+    d.parentElement.removeChild(d);
+}
